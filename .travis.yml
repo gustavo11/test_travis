@@ -7,9 +7,7 @@ before_install: true
 
 # Use this to install any prerequisites or dependencies necessary to run your build
 install:
-  - cpanm --installdeps Parse::PlainConfig
-  - cpanm --installdeps Term::ProgressBar 
-
+  - cpanm --installdeps Term::ProgressBar
 
 # Use this to prepare your build for testing
 # e.g. copy database configurations, environment variables, etc.
@@ -21,7 +19,7 @@ before_script: true
 script:
   - echo -e `ps -ef | grep postgres | grep -v 'postgres:' | grep -v 'grep'`
   - echo $PWD
-  - ./test.pl
+  #- ./test.pl
 
 after_success: true
 
