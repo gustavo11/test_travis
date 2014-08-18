@@ -19,6 +19,7 @@ before_script: true
 script:
   - echo -e `ps -ef | grep postgres | grep -v 'postgres:' | grep -v 'grep'`
   - echo $PWD
+  - ./test.pl
 
 after_success: true
 
