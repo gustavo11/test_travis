@@ -10,7 +10,7 @@ before_install: true
 
 # Use this to install any prerequisites or dependencies necessary to run your build
 install:
-  - cpanm --quiet --installdeps --notest  Parse::PlainConfig
+  - cpanm --installdeps --notest  Parse::PlainConfig
 
 # Use this to prepare your build for testing
 # e.g. copy database configurations, environment variables, etc.
