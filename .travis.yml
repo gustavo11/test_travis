@@ -9,7 +9,7 @@ before_install: true
 install:
   - cpanm --installdeps Term::ProgressBar
   - cpanm --installdeps Paranoid
-  - cpanm --installdeps Parse::PlainConfig
+  - cpanm Parse::PlainConfig
 # Use this to prepare your build for testing
 # e.g. copy database configurations, environment variables, etc.
 before_script: true
