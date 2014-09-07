@@ -6,7 +6,7 @@ perl:
 before_install: true
 
 # Use this to install any prerequisites or dependencies necessary to run your build
-install:
+install: true
   #- cpanm Term::ProgressBar
 #  - cpanm --installdeps Paranoid
   
