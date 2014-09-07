@@ -10,7 +10,7 @@ install:
   - cpanm Term::ProgressBar
 #  - cpanm --installdeps Paranoid
   - cpanm CORLISS/Paranoid/Paranoid-0.34.tar.gz
-  - cat /home/travis/.cpanm/work/1410100465.2542/build.log
+  
 #  - cpanm Parse::PlainConfig
   
 # Use this to prepare your build for testing
@@ -27,4 +27,5 @@ script:
 
 after_success: true
 
-after_failure: true
+after_failure:
+  - ls /home/travis/.cpanm/work/*/build.log
