@@ -2,6 +2,9 @@ language: perl
 perl:
   - "5.20"
 
+addons:
+  postgresql: "9.3"
+
 # Use this to prepare the system to install prerequisites or dependencies
 before_install: true
 
@@ -29,9 +32,10 @@ script:
   #- cpanm BerkeleyDB
   #- cpanm Net::SMTP
   #- cpanm Unix::Syslog
-  - cpanm --notest Paranoid
-  - cpanm Parse::PlainConfig
+  #- cpanm --notest Paranoid
+  #- cpanm Parse::PlainConfig
   #- ./test.pl
+  - which psql
 
 after_success: true
 
