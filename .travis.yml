@@ -29,4 +29,4 @@ script:
 after_success: true
 
 after_failure:
-  - ls /home/travis/.cpanm/work/*/build.log
+  - cat /home/travis/.cpanm/work/*/build.log
