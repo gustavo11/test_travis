@@ -9,7 +9,7 @@ before_install: true
 install:
   - cpanm Term::ProgressBar
 #  - cpanm --installdeps Paranoid
-  - cpanm CORLISS/Paranoid/Paranoid-0.34.tar.gz
+  
   
 #  - cpanm Parse::PlainConfig
   
@@ -21,8 +21,9 @@ before_script: true
 # All commands must exit with code 0 on success. 
 # Anything else is considered failure.
 script:
-  - echo -e `ps -ef | grep postgres | grep -v 'postgres:' | grep -v 'grep'`
-  - echo $PWD
+  #- echo -e `ps -ef | grep postgres | grep -v 'postgres:' | grep -v 'grep'`
+  #- echo $PWD
+  - cpanm CORLISS/Paranoid/Paranoid-0.34.tar.gz
   #- ./test.pl
 
 after_success: true
