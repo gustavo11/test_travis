@@ -8,8 +8,9 @@ before_install: true
 # Use this to install any prerequisites or dependencies necessary to run your build
 install:
   - cpanm --installdeps Term::ProgressBar
-  - cpanm --installdeps Paranoid
-  - cpanm Parse::PlainConfig
+#  - cpanm --installdeps Paranoid
+  - cpanm Paranoid
+#  - cpanm Parse::PlainConfig
   
 # Use this to prepare your build for testing
 # e.g. copy database configurations, environment variables, etc.
