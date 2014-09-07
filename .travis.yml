@@ -7,9 +7,9 @@ before_install: true
 
 # Use this to install any prerequisites or dependencies necessary to run your build
 install:
-  - cpanm --installdeps Term::ProgressBar
+  - cpanm Term::ProgressBar
 #  - cpanm --installdeps Paranoid
-  - cpanm Paranoid
+  - cpanm CORLISS/Paranoid/Paranoid-0.34.tar.gz
 #  - cpanm Parse::PlainConfig
   
 # Use this to prepare your build for testing
