@@ -36,6 +36,8 @@ script:
   #- cpanm Parse::PlainConfig
   #- ./test.pl
   - which psql
+  - echo $PERL5LIB
+  - echo $PWD
 
 after_success: true
 
