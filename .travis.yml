@@ -7,7 +7,7 @@ before_install: true
 
 # Use this to install any prerequisites or dependencies necessary to run your build
 install:
-  - cpanm Term::ProgressBar
+  #- cpanm Term::ProgressBar
 #  - cpanm --installdeps Paranoid
   
   
@@ -26,10 +26,11 @@ script:
   
   # Those packages just not to be installed because some of the Paranoid
   # package tests relying on them
-  - cpanm BerkeleyDB
-  - cpanm Net::SMTP
-  - cpanm Unix::Syslog
-  - cpanm Paranoid
+  #- cpanm BerkeleyDB
+  #- cpanm Net::SMTP
+  #- cpanm Unix::Syslog
+  - cpanm --notest Paranoid
+  - cpanm Parse::PlainConfig
   #- ./test.pl
 
 after_success: true
