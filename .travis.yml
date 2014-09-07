@@ -23,7 +23,13 @@ before_script: true
 script:
   #- echo -e `ps -ef | grep postgres | grep -v 'postgres:' | grep -v 'grep'`
   #- echo $PWD
-  - cpanm CORLISS/Paranoid/Paranoid-0.34.tar.gz
+  
+  # Those packages just not to be installed because some of the Paranoid
+  # package tests relying on them
+  - cpanm BerkeleyDB
+  - cpanm Net::SMTP
+  - cpanm Unix::Syslog
+  - cpanm Paranoid
   #- ./test.pl
 
 after_success: true
