@@ -38,6 +38,7 @@ script:
   - which psql
   - echo $PERL5LIB
   - echo $PWD
+  - cpanm DB_File
 
 after_success: true
 
