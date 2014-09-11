@@ -38,6 +38,8 @@ script:
   - which psql
   - echo $PERL5LIB
   - echo $PWD
+  - sudo apt-get update
+  - sudo apt-get install libdb4.6-dev
   - sudo apt-get install libdb4.7-dev
   - cpanm DB_File
 
