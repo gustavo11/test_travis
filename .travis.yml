@@ -41,6 +41,7 @@ script:
   - sudo apt-get update
   - sudo apt-get install libdb4.6-dev
   - sudo apt-get install libdb4.7-dev
+  - sudo apt-get install libdb4.8-dev
   - cpanm DB_File
 
 after_success: true
